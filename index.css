@@ -1,3 +1,22 @@
 .parallax img{
-      display: inherit !important;
+  display: inherit !important;
+}
+.header_main {
+  color: white;
+  text-align: center;
+}
+
+.paragraph_main {
+  color: white;
+  text-align: center;
+}
+
+.header_whitespace {
+  color: black;
+  text-align: center;
+}
+
+.paragraph_whitespace{
+  color: #757575;
+  font-size: 25px;
 }
