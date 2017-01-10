@@ -3,8 +3,9 @@ $(document).ready(function() {
   $('.parallax').parallax();
   $('.button-collapse').sideNav();
   $('.collapsible').collapsible();
-  $('.carousel').carousel();
-  $('.carousel.carousel-slider').carousel({full_width: true});
+  $('.carousel').carousel({
+    indicators:true
+  });
 });
 
 $('.button-collapse').sideNav({
@@ -14,3 +15,5 @@ $('.button-collapse').sideNav({
     draggable: true // Choose whether you can drag to open on touch screens
   }
 );
+
+$('.carousel.carousel-slider').carousel({full_width: true});

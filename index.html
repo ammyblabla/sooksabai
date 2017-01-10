@@ -26,6 +26,7 @@
                 <li><a href="#service">Facility</a></li>
                 <li><a href="#ourRoom">Our Room</a></li>
                 <li><a href="#location">Location</a></li>
+                <li><a href="#gallery">gallery</a></li>
                 <li><a href="#contact">Contact us</a></li>
               </ul>
           </div>
@@ -51,6 +52,7 @@
         <li><a href="#service">Facility</a></li>
         <li><a href="#ourRoom">Our Room</a></li>
         <li><a href="#location">Location</a></li>
+        <li><a href="#gallery">gallery</a></li>
         <li><a href="#contact">Contact us</a></li>
       </ul>
     </div>
@@ -139,6 +141,7 @@
             <h2 class="header">Location</h2>
             <p class="paragraph_whitespace">อพาร์ตเมนต์ของเราใกล้คณะเภสัชศาสตร์ ม.บูรพาเพียง 100 เมตร</p>
             <p class="paragraph_whitespace">ซ.2 ถ.บางแสนสาย 4 ใต้ ตำบลแสนสุข อำเภอเมืองชลบุรี จังหวัดชลบุรี</p>
+
             <!-- <div id="map" style="width:100%;height:500px">
               <script>
               function myMap() {
@@ -146,15 +149,17 @@
                 var mapOptions = {
                   center: new google.maps.LatLng(13.280294, 100.928536),
                   zoom: 20
+                  key: AIzaSyBAR0Iz0qqYFL67kpASyelvqjDQGdzi0bI
                 }
                 var map = new google.maps.Map(mapCanvas, mapOptions);
               }
               </script>
               <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+              <script src="https://maps.googleapis.com/maps/api/js?key=yourKEYhere"></script>
 
             </div> -->
 
-            <div id="map">
+            <div id="map" style="height:100%; width:100%;">
                 <script>
                   function initMap() {
                     var uluru = {lat: -25.363, lng: 131.044};
@@ -168,43 +173,39 @@
                     });
                   }
                 </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAR0Iz0qqYFL67kpASyelvqjDQGdzi0bI&callback=initMap">
-                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAR0Iz0qqYFL67kpASyelvqjDQGdzi0bI&callback=initMap" async defer></script>                </script>
             </div>
+
+            <div id="gallery">
+              <p>test</p>
+              <!-- <div class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel-fixed-item center">
+                  <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                <div class="carousel-item red white-text" href="#one!">
+                  <h2>First Panel</h2>
+                  <p class="white-text">This is your first panel</p>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                  <h2>Second Panel</h2>
+                  <p class="white-text">This is your second panel</p>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                  <h2>Third Panel</h2>
+                  <p class="white-text">This is your third panel</p>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                  <h2>Fourth Panel</h2>
+                  <p class="white-text">This is your fourth panel</p>
+                </div>
+              </div> -->
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="carousel carousel-slider">
-      <a class="carousel-item" href="#one!"><img src="images/2.jpg"></a>
-      <a class="carousel-item" href="#two!"><img src="images/3.jpg"></a>
-      <a class="carousel-item" href="#three!"><img src="images/4.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="images/5.jpg"></a>
-      <a class="carousel-item" href="#five!"><img src="images/6.jpg"></a>
-    </div> -->
-    <div class="carousel carousel-slider center" data-indicators="true">
-      <div class="carousel-fixed-item center">
-        <a class="btn waves-effect white grey-text darken-text-2">button</a>
-      </div>
-      <div class="carousel-item red white-text" href="#one!">
-        <h2>First Panel</h2>
-        <p class="white-text">This is your first panel</p>
-      </div>
-      <div class="carousel-item amber white-text" href="#two!">
-        <h2>Second Panel</h2>
-        <p class="white-text">This is your second panel</p>
-      </div>
-      <div class="carousel-item green white-text" href="#three!">
-        <h2>Third Panel</h2>
-        <p class="white-text">This is your third panel</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#four!">
-        <h2>Fourth Panel</h2>
-        <p class="white-text">This is your fourth panel</p>
-      </div>
-    </div>
   </body>
 
   <footer class="page-footer" id="contact">
