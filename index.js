@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('.parallax').parallax();
   $('.button-collapse').sideNav();
   $('.collapsible').collapsible();
+  $('.carousel').carousel();
+  $('.carousel.carousel-slider').carousel({full_width: true});
 });
 
 $('.button-collapse').sideNav({
