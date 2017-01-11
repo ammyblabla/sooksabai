@@ -2,12 +2,12 @@
   display: inherit !important;
 }
 .header_main {
-  color: white;
+  /*color: white;*/
   text-align: center;
 }
 
 .paragraph_main {
-  color: white;
+  /*color: white;*/
   text-align: center;
 }
 
@@ -24,6 +24,22 @@
 .paragraph_footer {
   font-size: 20px;
   color: white;
+}
+
+#main {
+  color: white;
+}
+
+#ourRoom {
+  color: white;
+}
+
+div[class^="nav"]{
+  background: #ff7e34;
+}
+
+#contact{
+  background: #ff7e34;
 }
 
 body {
