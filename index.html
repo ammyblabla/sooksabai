@@ -28,8 +28,8 @@
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#service">Facility</a></li>
                 <li><a href="#ourRoom">Our Room</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#location">Location</a></li>
-                <li><a href="#gallery">gallery</a></li>
                 <li><a href="#contact">Contact us</a></li>
               </ul>
           </div>
@@ -55,8 +55,8 @@
       <ul id="slide-out" class="side-nav">
         <li><a href="#service">Facility</a></li>
         <li><a href="#ourRoom">Our Room</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#location">Location</a></li>
-        <li><a href="#gallery">gallery</a></li>
         <li><a href="#contact">Contact us</a></li>
       </ul>
     </div>
@@ -126,7 +126,6 @@
 
       <div id="ourRoom" class="section scrollspy">
         <div class="parallax-container">
-
           <div class="container">
             <br><br>
             <h1 class="header_main">ห้องของเราเป็นห้องพักสตูดิโอ</h1>
@@ -138,27 +137,49 @@
             <br><br>
           </div>
 
-          <!-- <div class="parallax"><img src="images/2.jpg"></div> -->
-          <!-- <div class="parallax"><img src="images/tester.png"></div> -->
           <div class="parallax"><img src="images/2-edit.jpg"></div>
-          <!-- <div class="parallax"><img src="images/test2.jpg"></div> -->
         </div>
       </div>
 
+      <div id="gallery">
+        <h1 class="header_main">Gallery</h1>
+        <div class="carousel carousel-slider center" data-indicators="true">
+          <!-- <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+          </div> -->
+          <a class="carousel-item" href="#one!"><img src="images/1.jpg"></a>
+          <a class="carousel-item" href="#two!"><img src="images/2.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="images/3.jpg"></a>
+          <a class="carousel-item" href="#four!"><img src="images/4.jpg"></a>
+          <a class="carousel-item" href="#five!"><img src="images/5.jpg"></a>
+          <a class="carousel-item" href="#six!"><img src="images/6.jpg"></a>
+          <a class="carousel-item" href="#seven!"><img src="images/7.jpg"></a>
+          <!-- <a class="carousel-item" href="#eight!"><img src="images/8.jpg"></a>
+          <a class="carousel-item" href="#nine!"><img src="images/9.jpg"></a>
+          <a class="carousel-item" href="#ten!"><img src="images/10.jpg"></a>
+          <a class="carousel-item" href="#eleven!"><img src="images/11.jpg"></a> -->
+          <a class="carousel-item" href="#eight!"><img src="images/12.jpg"></a>
+          <a class="carousel-item" href="#nine!"><img src="images/13.jpg"></a>
+        </div>
+      </div>
+
+
       <div id="location" class="section scrollspy">
-        <div class="section white">
+        <!-- <div class="section white"> -->
+        <div class="parallax-container" style="height:800">
           <div class="row container">
             <h2 class="header">Location</h2>
-            <p class="paragraph_whitespace">อพาร์ตเมนต์ของเราใกล้คณะเภสัชศาสตร์ ม.บูรพาเพียง 100 เมตร</p>
-            <p class="paragraph_whitespace">7/17 ซ.2 ถ.บางแสนสาย 4 ใต้ ตำบลแสนสุข อำเภอเมืองชลบุรี จังหวัดชลบุรี</p>
+            <h5 class="paragraph_main">อพาร์ตเมนต์ของเราใกล้คณะเภสัชศาสตร์ ม.บูรพาเพียง 100 เมตร</p>
+            <h5 class="paragraph_main">7/17 ซ.2 ถ.บางแสนสาย 4 ใต้ ตำบลแสนสุข อำเภอเมืองชลบุรี จังหวัดชลบุรี</p>
 
             <!-- <div id="map"></div> -->
-            <div id="map" style="max-width:800px;height:400px;background:salmon"></div>
+            <div id="map" style="max-width:800px;height:250px;background:salmon"></div>
             <script>
               function myMap() {
                   var myLatLng = {lat: 13.280294, lng: 100.928540};
                   var mapOptions = {
-                      center: new google.maps.LatLng(13.280294, 100.928540),
+                      // center: new google.maps.LatLng(13.280294, 100.928540),
+                      center: myLatLng,
                       zoom: 20,
                       // mapTypeId: google.maps.MapTypeId.HYBRID
                       mapTypeId: 'satellite'
@@ -177,11 +198,10 @@
                   });
               }
             </script>
-
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAR0Iz0qqYFL67kpASyelvqjDQGdzi0bI&callback=myMap"></script>
 
-
           </div>
+          <div class="parallax" style="height:800"><img src="images/3.jpg"></div>
         </div>
       </div>
 

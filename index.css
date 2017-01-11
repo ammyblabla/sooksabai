@@ -34,6 +34,10 @@
   color: white;
 }
 
+#location {
+  color:white;
+}
+
 div[class^="nav"]{
   background: #ff7e34;
 }
@@ -76,7 +80,7 @@ main {
   margin: 0 5px;
 }*/
 .carousel.carousel-slider .carousel-item {
-  top: 100%;
+  top: 50%;
 }
 
 #link-footer:visited {
