@@ -149,15 +149,21 @@
             <!-- <div id="map"></div> -->
             <div id="map" style="width:400px;height:400px;background:yellow"></div>
             <script>
-            function myMap() {
-                var mapOptions = {
-                    center: new google.maps.LatLng(13.280294, 100.928536),
-                    zoom: 20,
-                    // mapTypeId: google.maps.MapTypeId.HYBRID
-                    mapTypeId: 'roadmap'
-                }
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-            }
+              function myMap() {
+                  var mapOptions = {
+                      center: new google.maps.LatLng(13.280294, 100.928536),
+                      zoom: 20,
+                      // mapTypeId: google.maps.MapTypeId.HYBRID
+                      mapTypeId: 'roadmap'
+                  }
+                  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+              }
+              google.maps.event.addDomListener(window, 'load', initialize);
+              google.maps.event.addDomListener(window, "resize", function() {
+               var center = map.getCenter();
+               google.maps.event.trigger(map, "resize");
+               map.setCenter(center);
+              });
             </script>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAR0Iz0qqYFL67kpASyelvqjDQGdzi0bI&callback=myMap"></script>
