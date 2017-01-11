@@ -150,12 +150,13 @@
           <div class="row container">
             <h2 class="header">Location</h2>
             <p class="paragraph_whitespace">อพาร์ตเมนต์ของเราใกล้คณะเภสัชศาสตร์ ม.บูรพาเพียง 100 เมตร</p>
-            <p class="paragraph_whitespace">7/11 ซ.2 ถ.บางแสนสาย 4 ใต้ ตำบลแสนสุข อำเภอเมืองชลบุรี จังหวัดชลบุรี</p>
+            <p class="paragraph_whitespace">7/17 ซ.2 ถ.บางแสนสาย 4 ใต้ ตำบลแสนสุข อำเภอเมืองชลบุรี จังหวัดชลบุรี</p>
 
             <!-- <div id="map"></div> -->
             <div id="map" style="max-width:800px;height:400px;background:salmon"></div>
             <script>
               function myMap() {
+                  var myLatLng = {lat: 13.280294, lng: 100.928536};
                   var mapOptions = {
                       center: new google.maps.LatLng(13.280294, 100.928536),
                       zoom: 20,
@@ -163,6 +164,12 @@
                       mapTypeId: 'roadmap'
                   }
                   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'สุขสบายอพาร์ทเมนท์'
+                  });
                   google.maps.event.addDomListener(window, "resize", function() {
                      var center = map.getCenter();
                      google.maps.event.trigger(map, "resize");
