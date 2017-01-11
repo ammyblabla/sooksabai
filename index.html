@@ -150,8 +150,9 @@
             function myMap() {
                 var mapOptions = {
                     center: new google.maps.LatLng(13.280294, 100.928536),
-                    zoom: 10,
-                    mapTypeId: google.maps.MapTypeId.HYBRID
+                    zoom: 20,
+                    // mapTypeId: google.maps.MapTypeId.HYBRID
+                    mapTypeId: 'roadmap'
                 }
             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
             }
