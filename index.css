@@ -36,7 +36,7 @@ main {
   flex: 1 0 auto;
 }
 
-.map {
+#map {
   height: 400px;
   width: 100%;
   height: 100%
@@ -60,4 +60,12 @@ main {
 }*/
 .carousel.carousel-slider .carousel-item {
   top: 100%;
+}
+
+#link-footer:visited {
+    color: white;
+}
+
+#link-footer {
+    color: white;
 }
